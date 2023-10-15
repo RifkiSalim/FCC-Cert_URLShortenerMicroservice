@@ -1,0 +1,13 @@
+datasource db {
+    provider = "sqlite"
+    url      = "file:./sqlite.db"
+}
+
+generator client {
+    provider = "prisma-client-js"
+}
+
+model ShortUrl {
+    id         Int    @id @default(autoincrement())
+    redirectTo String
+}
