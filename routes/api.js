@@ -39,7 +39,7 @@ router
         return;
       }
     } else {
-      res.status(400).json({
+      res.json({
         error: "invalid url",
       });
       return;
