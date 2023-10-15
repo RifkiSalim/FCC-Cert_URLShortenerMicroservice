@@ -21,7 +21,6 @@ router
 
     const validatedUrl = await validateURL(url);
 
-    console.log(validatedUrl);
     if (validatedUrl) {
       const newShortUrl = await prisma.shortUrl.create({
         data: {
